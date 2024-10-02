@@ -1,0 +1,128 @@
+@font-face {
+    font-family: baloo;
+    src: url(./assets/fonts/Baloo_Bhaijaan_2/BalooBhaijaan2-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: baloo !important;
+}
+
+#menu-icon,
+#close-menu {
+    font-size: 20px;
+    color: black;
+}
+
+#menu-icon {
+    display: none;
+    padding: 0px 20px;
+}
+
+.border-menu {
+    border: 3px solid black;
+    border-radius: 10px;
+    box-sizing: border-box !important;
+}
+
+#navbar {
+    width: 100%;
+    height: 0px;
+    padding: 0 !important;
+    top: 0;
+    overflow: hidden;
+    transition: 0.3s !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: nowrap !important;
+    display: none !important;
+}
+
+.open {
+    height: 200px !important;
+}
+
+.footer-links, .footer-icon {
+    transition: 0.3s;
+    color: rgba(0, 0, 0, 0.507) !important;
+    font-weight: 500 !important;
+
+}
+
+.footer-links:hover, .footer-icon:hover {
+    /* color: rgba(0, 0, 0, 0.822) !important; */
+    color: black !important;
+}
+
+.container-fluid {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.hero-heading-2 {
+    color: rgb(28, 45, 52) !important;
+}
+
+.footer {
+    background-color: #f9f9f9 !important;
+}
+
+.footer-icons i {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+@media only screen and (max-width: 900px) {
+    #hide1 {
+        display: none !important;
+    }
+
+    #hide2 {
+        display: none !important;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+    #navbar{
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo-img {
+        height: 40px !important;
+    }
+
+    .hero-heading-1,
+    .hero-heading-2 {
+        font-size: 45px !important;
+    }
+
+    #hero-des {
+        width: 100% !important;
+    }
+
+    #footer-text {
+        width: 100% !important;
+    }
+
+    #footer-row,
+    #cards-row {
+        padding: 0px !important;
+    }
+}
